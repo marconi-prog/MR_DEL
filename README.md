@@ -1,38 +1,60 @@
-🚀 MR_DEL | Sistema de Pedidos e Produtos
+🛵 MR_DEL | API de Gerenciamento de Pedidos e Produtos
 
-Uma API RESTful para um sistema de pedidos e gerenciamento de produtos, desenvolvida com Spring Boot 3 e focada em segurança utilizando JSON Web Tokens (JWT).
+MR_DEL é uma API RESTful robusta e segura, desenvolvida para ser o backend de um sistema de pedidos de delivery. Ela gerencia o catálogo de produtos e lida com a autenticação de usuários e administradores.
 
-🎯 Funcionalidades Principais
+🚀 Tecnologias Utilizadas
 
-    Autenticação JWT: Login (ADMIN e CLIENTE) e registro de novos usuários (CLIENTE).
+O projeto MR_DEL foi construído usando o ecossistema Java/Spring, garantindo alta performance e um desenvolvimento estruturado.
+Categoria	Tecnologia	Função Principal
 
-    Autorização Baseada em Papéis: Diferenciação de permissões via ROLE_ADMIN e ROLE_CLIENTE.
+☕ Linguagem	Java	Linguagem principal do projeto.
 
-    Gerenciamento de Produtos: CRUD completo, protegido por autenticação (acessível apenas por ADMINs).
+🍃 Framework	Spring Boot	Estrutura moderna para criação da API.
 
-    Catálogo Público: Rota pública para visualização de produtos (sem necessidade de token).
+🛡️ Segurança	Spring Security & JWT	Autenticação (Login/Registro) e Autorização por papéis (ADMIN/CLIENTE).
 
-    Persistência de Dados: Utiliza PostgreSQL com JPA/Hibernate.
+💾 Banco de Dados	PostgreSQL	Persistência de dados (Produtos, Usuários).
 
-🛠️ Tecnologias Utilizadas
+🔗 Persistência	Spring Data JPA/Hibernate	Mapeamento Objeto-Relacional.
 
-Categoria	Tecnologia	Versão
-Backend	Spring Boot	3.2.0
-Linguagem	Java	21+
-Segurança	Spring Security, JJWT (JWT)	6.2.0
-Banco de Dados	PostgreSQL	-
-Persistência	Spring Data JPA, Hibernate	-
+🧪 Testes	Postman	Testes e validação de todos os endpoints.
 
-⚙️ Configuração e Execução
+🧰 Versionamento	Git e GitHub	Versionamento e colaboração do código.
 
-1. Pré-requisitos
+🔒 Endpoints da API
 
-Você precisará ter instalado:
+A API diferencia o acesso entre rotas públicas e rotas de gerenciamento (ADMIN), que exigem um token JWT válido.
+Categoria	URL Base	Exemplos de Rotas
+Público	/api/products	GET /api/products (Catálogo de produtos)
+Autenticação	/api/auth	POST /api/auth/login, POST /api/auth/register
+Gerenciamento	/api/products/management	POST /api/products/management (Cria produto, exige ADMIN)
 
-    JDK (Java Development Kit) 21 ou superior.
+⚙️ Configuração Local
 
-    Maven (para gerenciamento de dependências).
+Para rodar a API MR_DEL em sua máquina:
 
-    PostgreSQL (servidor de banco de dados).
+    Pré-requisitos: Instale JDK 21+, Maven e PostgreSQL.
 
-    Postman ou ferramenta similar para testar os endpoints.
+    Configuração do BD: Crie um banco de dados e configure o arquivo application.properties (veja a seção de Código).
+
+    Variáveis de Ambiente: Defina JWT_KEY e JWT_EXP na sua IDE ou terminal.
+
+    Execução: mvn spring-boot:run
+
+Um usuário ADMIN padrão é criado automaticamente com as credenciais: admin@deli.com / 123mudar.
+
+💬 Comunidade e Suporte
+
+Tire suas dúvidas e participe das discussões para melhorar a MR_DEL!
+
+Use o espaço de issues para relatar bugs, sugerir novas funcionalidades (como endpoints de Pedidos!) ou tirar dúvidas sobre a estrutura do projeto 💬
+
+👥 Contribuidores
+
+Agradecimento especial a todas as pessoas incríveis que contribuíram para este projeto 💙
+
+📄 Licença
+
+Este projeto é open-source e está disponível sob a Licença MIT.
+
+<div align="center">   <p>Feito com ☕️ e ❤️ por [Seu Nome ou Usuário do GitHub]</p> </div>
