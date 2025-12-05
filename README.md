@@ -45,6 +45,8 @@ Um usuário ADMIN padrão é criado automaticamente com as credenciais: admin@de
 
 💬 Comunidade e Suporte
 
+[![Abrir Issues](https://img.shields.io/badge/Abrir%20Issues-blue?style=for-the-badge&logo=github)](https://github.com/marconi-prog/MR_DEL/issues)
+
 Tire suas dúvidas e participe das discussões para melhorar a MR_DEL!
 
 Use o espaço de issues para relatar bugs, sugerir novas funcionalidades (como endpoints de Pedidos!) ou tirar dúvidas sobre a estrutura do projeto 💬
