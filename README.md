@@ -21,14 +21,6 @@ Categoria	Tecnologia	Função Principal
 
 🧰 Versionamento	Git e GitHub	Versionamento e colaboração do código.
 
-🔒 Endpoints da API
-
-A API diferencia o acesso entre rotas públicas e rotas de gerenciamento (ADMIN), que exigem um token JWT válido.
-Categoria	URL Base	Exemplos de Rotas
-Público	/api/products	GET /api/products (Catálogo de produtos)
-Autenticação	/api/auth	POST /api/auth/login, POST /api/auth/register
-Gerenciamento	/api/products/management	POST /api/products/management (Cria produto, exige ADMIN)
-
 ⚙️ Configuração Local
 
 Para rodar a API MR_DEL em sua máquina:
