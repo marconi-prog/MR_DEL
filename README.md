@@ -1,39 +1,65 @@
 🛵 MR_DEL | API de Gerenciamento de Pedidos e Produtos
 
-MR_DEL é uma API RESTful robusta e segura, desenvolvida para ser o backend de um sistema de pedidos de delivery. Ela gerencia o catálogo de produtos e lida com a autenticação de usuários e administradores.
+MR_DEL é uma API RESTful robusta e segura, desenvolvida para servir como backend de um sistema de delivery.
+Ela é responsável pelo gerenciamento de produtos, usuários e autenticação, com foco em boas práticas, segurança e escalabilidade.
 
 🚀 Tecnologias Utilizadas
 
-O projeto MR_DEL foi construído usando o ecossistema Java/Spring, garantindo alta performance e um desenvolvimento estruturado.
-Categoria	Tecnologia	Função Principal
+☕ Linguagem	Java	Linguagem principal do projeto
 
-☕ Linguagem	Java	Linguagem principal do projeto.
+🍃 Framework	Spring Boot	Criação da API REST
 
-🍃 Framework	Spring Boot	Estrutura moderna para criação da API.
+🛡️ Segurança	Spring Security & JWT	Autenticação e autorização (ADMIN / CLIENTE)
 
-🛡️ Segurança	Spring Security & JWT	Autenticação (Login/Registro) e Autorização por papéis (ADMIN/CLIENTE).
+💾 Banco de Dados	PostgreSQL	Persistência de dados
 
-💾 Banco de Dados	PostgreSQL	Persistência de dados (Produtos, Usuários).
+🔗 Persistência	Spring Data JPA / Hibernate	Mapeamento Objeto-Relacional
 
-🔗 Persistência	Spring Data JPA/Hibernate	Mapeamento Objeto-Relacional.
+🧪 Testes	Postman	Testes e validação dos endpoints
 
-🧪 Testes	Postman	Testes e validação de todos os endpoints.
+🧰 Versionamento	Git & GitHub	Controle de versão e colaboração
 
-🧰 Versionamento	Git e GitHub	Versionamento e colaboração do código.
+🔐 Funcionalidades Principais
+
+✅ Cadastro e login de usuários
+
+✅ Autenticação via JWT
+
+✅ Controle de acesso por perfil (ADMIN / CLIENTE)
+
+✅ CRUD de produtos
+
+✅ Persistência segura em PostgreSQL
+
+✅ API REST seguindo boas práticas
 
 ⚙️ Configuração Local
+✅ Pré-requisitos
 
-Para rodar a API MR_DEL em sua máquina:
+JDK 21+
 
-    Pré-requisitos: Instale JDK 21+, Maven e PostgreSQL.
+Maven
 
-    Configuração do BD: Crie um banco de dados e configure o arquivo application.properties (veja a seção de Código).
+PostgreSQL
 
-    Variáveis de Ambiente: Defina JWT_KEY e JWT_EXP na sua IDE ou terminal.
+🗄️ Queries SQL Utilizadas no Projeto
 
-    Execução: mvn spring-boot:run
+Estas consultas foram usadas para validação e testes diretos no banco de dados PostgreSQL:
 
-Um usuário ADMIN padrão é criado automaticamente com as credenciais: admin@deli.com / 123mudar.
+-- Listar todos os usuários
+SELECT * FROM users;
+
+-- Listar todos os produtos
+SELECT * FROM products;
+
+-- Listar produtos ordenados por preço (do maior para o menor)
+SELECT name, price FROM products ORDER BY price DESC;
+
+-- Buscar produto específico pelo nome
+SELECT name, price FROM products WHERE name = 'Pizza';
+
+-- Buscar usuário pelo nome
+SELECT name FROM users WHERE name = 'admin';
 
 💬 Comunidade e Suporte
 
