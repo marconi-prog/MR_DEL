@@ -1,6 +1,6 @@
 🛵 MR_DEL | API de Gerenciamento de Pedidos e Produtos
 
-MR_DEL é uma API RESTful robusta e segura, desenvolvida para servir como backend de um sistema de delivery.
+MR_DEL é uma API RESTFUL robusta e segura, desenvolvida para servir como backend de um sistema de delivery.
 Ela é responsável pelo gerenciamento de produtos, usuários e autenticação, com foco em boas práticas, segurança e escalabilidade.
 
 🚀 Tecnologias Utilizadas
