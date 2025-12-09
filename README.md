@@ -19,22 +19,7 @@ Ela é responsável pelo gerenciamento de produtos, usuários e autenticação, 
 
 🧰 Versionamento	Git & GitHub	Controle de versão e colaboração
 
-🔐 Funcionalidades Principais
-
-✅ Cadastro e login de usuários
-
-✅ Autenticação via JWT
-
-✅ Controle de acesso por perfil (ADMIN / CLIENTE)
-
-✅ CRUD de produtos
-
-✅ Persistência segura em PostgreSQL
-
-✅ API REST seguindo boas práticas
-
 ⚙️ Configuração Local
-✅ Pré-requisitos
 
 JDK 21+
 
